@@ -23,7 +23,7 @@ public class Worker implements Serializable {
 	private String name;
 	
 	@Column(name = "DAILY_INCOME")
-	private Double dailyInCome;
+	private Double dailyIncome;
 	
 	public Worker() {
 	}
@@ -32,7 +32,7 @@ public class Worker implements Serializable {
 		super();
 		this.id = id;
 		this.name = name;
-		this.dailyInCome = dailyInCome;
+		this.dailyIncome = dailyInCome;
 	}
 
 	public Long getId() {
@@ -51,12 +51,12 @@ public class Worker implements Serializable {
 		this.name = name;
 	}
 
-	public Double getDailyInCome() {
-		return dailyInCome;
+	public Double getDailyIncome() {
+		return dailyIncome;
 	}
 
-	public void setDailyInCome(Double dailyInCome) {
-		this.dailyInCome = dailyInCome;
+	public void setDailyIncome(Double dailyIncome) {
+		this.dailyIncome = dailyIncome;
 	}
 
 	@Override
